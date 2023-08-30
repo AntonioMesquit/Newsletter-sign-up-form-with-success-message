@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(54, 56, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: rgb(54, 56, 77);
+    font-family: 'Roboto', sans-serif;
+}
+.sent{
+    background-color: white;
+    width: 430px;
+    height: 430px;
+   padding: 50px;
+   border-radius: 25px;
+   display: none;
+}
+.foto-2{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.text-content-2 h1{
+    width: 100%;
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.text-content-2 p{
+    font-size: 15px;
+    width: 90%;
+}
+.text-content-2{
+    margin-bottom: 30px;
+}
+body.active .register{
+    display: none;
+}
+body.active .sent{
+    display: block;
+}
+.sent #but2{
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.register{
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+   
+
+
+}
+.title h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.title p{
+    font-size: 16px;
+    width: 80%;
+    font-weight: 600;
+}
+.title{
+    margin-bottom: 20px;
+}
+.lin{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.lin:nth-child(3){
+    margin-bottom: 50px;
+}
+.fts{
+    width: 20px;
+    margin-right: 10px;
+}
+.ok{
+    display: flex;
+    flex-direction: column;
+}
+.text-content{
+    width: 60%;
+}
+.image-container{
+    width: 40%;
+    height: 100%;
+    
+
+}
+.ok p{
+    font-weight: 700;
+    font-size: 11px;
+    margin-bottom: 10px;
+    
+}
+.foto{
+    width: 100%;
+    
+    
+}
+.text-content{
+   padding: 70px;
+}
+.x{
+    display: flex;
+    justify-content: space-between;
+}
+.x p:nth-child(2){
+    color: hsl(4, 100%, 67%);
+    font-weight: 300;
+    display: none;
+}
+.ok.erro .x p:nth-child(2){
+    display: block;
+}
+.ok.erro #email{
+border-color: hsl(4, 100%, 67%);
+background-color: hsla(4, 100%, 67%, 0.202);
+}
+.ok.erro #email::placeholder{
+    color: hsl(4, 100%, 67%);
+    
+    
+}
+
+#email{
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+#email::placeholder {
+  
+}
+input:focus{
+    border-color: hsl(231, 7%, 60%);;
+    outline: none;
+}
+#but{
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    .register{
+        flex-direction: column-reverse;
+        padding: 0;
+       padding-top: 20px;
+       
+      
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .title p{
+        width: 100%;
+        font-weight: 300;
+    }
+    .text-content{
+      width: 100%;
+      padding: 20px;
+    }
+    .image-container{
+        width: 100%;
+    }
+}

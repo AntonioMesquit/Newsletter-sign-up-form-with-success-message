@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<div class="register">
+  <div class="text-content">
+   <div class="title">
+    <h1>Stay updated!</h1>
+    <p>  Join 60,000+ product managers receiving monthly updates on:
+    </p>
+   </div>
+   <div class="check">
+    <p class="lin"><img src="assets/images/icon-success.svg" alt="" class="fts"> Product discovery and building what matters </p>
+    <p class="lin"><img src="assets/images/icon-success.svg" alt="" class="fts"> Measuring to ensure updates are a success </p>
+    <p class="lin"><img src="assets/images/icon-success.svg" alt="" class="fts"> And much more! </p>
+   </div>
+   <div class="inputs">
+    <label for="ok" class="ok">
+      <div class="x">
+      <p>Email adress</p> <p>Valid email required</p>
+    </div>
+      <input type="email" required placeholder="email@company.com" id="email">
+      <button value="submit" type="submit" id="but">Subscribe to monthly newsletter</button>
+   </label>
+
+   </div>
+  </div>
+  <div class="image-container">
+    <picture>
+      <source media="(max-width:768px)" srcset="assets/images/illustration-sign-up-mobile.svg" type="image/svg+xml">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class="foto">
+    </picture>
+  </div>
+</div>
+<div class="sent">
+    <img src="assets/images/icon-success.svg" alt="" class="foto-2">
+    <div class="text-content-2">
+      <h1>  Thanks for subscribing!</h1>
+      <p> A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <div class="but-2">
+    <button value="submit" type="submit" id="but2">Dismiss message</button>
+    </div>
+    
+    
+</div>
+ 
+  
+  
+</body>
+</html>
